@@ -183,6 +183,8 @@
   <script type="text/javascript">
     
      function imprimir(){
+      var singos = document.getElementById("singos").value;
+        if (singos!=="") {localStorage.setItem("signos", singos);}
 
         var M1 = document.getElementById("1").checked;
         var M2 = document.getElementById("2").checked;
