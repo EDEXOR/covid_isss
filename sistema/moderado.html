@@ -54,7 +54,7 @@
   <h6>
     <br>
 
-    Signos Vitales:<input type="text" class="form-control" id="singos"  placeholder="">
+    Signos Vitales:<input type="text" class="form-control" id="signos"  placeholder="">
 
     <div class="custom-control custom-checkbox checkbox-lg">
           <input type="checkbox" class="custom-control-input" id="1" checked="">
@@ -183,7 +183,7 @@
   <script type="text/javascript">
     
      function imprimir(){
-      var signos = document.getElementById("singos").value;
+      var signos = document.getElementById("signos").value;
         if (signos=="") {localStorage.setItem("signos", "");}else{
           localStorage.setItem("signos", signos);;
         }
@@ -248,7 +248,7 @@
     if (M19==true){localStorage.setItem("M19", "Traslado a Hospital Covid");}else{localStorage.setItem("M19", "");}
 
     window.open('imprimirG.html','_blank');
-    window.location.href = '../inicio.html';
+
 
 
         

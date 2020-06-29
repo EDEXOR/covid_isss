@@ -68,8 +68,7 @@
 <script type="text/javascript">
   function imprimir(){
 
-        var signos= localStorage.getItem("signos");
-        if (signos==""){}else{indi.insertAdjacentHTML('beforeend',"SIGNOS VITALES: "+ signos+ '<br><br>');}
+        
 
         var C1 = localStorage.getItem("C1");
         var C2 = localStorage.getItem("C2");
@@ -100,7 +99,10 @@
         var numero =localStorage.getItem("numero");
 
        var indi = document.getElementById("indicaciones");
-       
+       var signos= localStorage.getItem("signos");
+        if (signos==""){}else{indi.insertAdjacentHTML('beforeend',"SIGNOS VITALES: "+ signos + '<br><br>');}
+
+        
        if (C1==""){}else{indi.insertAdjacentHTML('beforeend', C1+ '<br><br>');}
        if (C2==""){}else{indi.insertAdjacentHTML('beforeend', C2+ '<br><br>');}
        if (C3==""){}else{indi.insertAdjacentHTML('beforeend', C3+ '<br><br>');}

@@ -54,7 +54,7 @@
   <h6>
     <br>
 
-    Signos Vitales:<input type="text" class="form-control" id="singos"  placeholder="">
+    Signos Vitales:<input type="text" class="form-control" id="signos"  placeholder="">
 
     <div class="custom-control custom-checkbox checkbox-lg">
           <input type="checkbox" class="custom-control-input" id="1" checked="">
@@ -177,9 +177,9 @@
     
      function imprimir(){
 
-        var singos = document.getElementById("singos").value;
-        if (singos!=="") {localStorage.setItem("signos", singos);}else{
-          localStorage.setItem("signos", "");
+       var signos = document.getElementById("signos").value;
+        if (signos=="") {localStorage.setItem("signos", "");}else{
+          localStorage.setItem("signos", signos);;
         }
 
         var E1 = document.getElementById("1").checked;
