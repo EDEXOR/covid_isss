@@ -67,8 +67,9 @@
 
 <script type="text/javascript">
   function imprimir(){
-var signos= localStorage.getItem("signos");
+    var signos= localStorage.getItem("signos");
         if (signos==""){}else{indi.insertAdjacentHTML('beforeend',"SIGNOS VITALES: "+ signos+ '<br><br>');}
+
         var M1 = localStorage.getItem("M1");
         var M2 = localStorage.getItem("M2");
         var M3 = localStorage.getItem("M3");
