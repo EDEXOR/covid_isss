@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>HOJA DE INDICACIONES</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <img src="../img/isss.jpg" style="float: left; width: 10%; ">
+    <br>
+    <div style="text-align: center; position: relative;">
+      <H4>INSTITUTO SALVADOREÑO DEL SEGURO SOCIAL</H4><br>
+      <h6>HOSPITAL GENERAL</h6><br>
+      <br>
+      <h2>HOJA DE INDICACIONES</h2>
+    </div>
+    <BR><H3>ESTABLE</H3>
+    <H4>Nombre:<span id="nombre"> </span>     N° de Afiliacion:<span id="numero"></span>     Fecha: <span id="fecha"></span></H4>
+
+    <!-- Jumbotron Header -->
+    <br><br>
+    <H4>Indicaciones:</H4><br>
+    
+      <h6 id="indicaciones"></h6>
+    
+   
+
+    </header>
+   
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+
+
+      
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<script type="text/javascript">
+  function imprimir(){
+
+        var E1 = localStorage.getItem("E1");
+        var E2 = localStorage.getItem("E2");
+        var E3 = localStorage.getItem("E3");
+        var E4 = localStorage.getItem("E4");
+        var E5 = localStorage.getItem("E5");
+        var E6 = localStorage.getItem("E6");
+        var E7 = localStorage.getItem("E7");
+        var E8 = localStorage.getItem("E8");
+        var E9 = localStorage.getItem("E9");
+        var E10 = localStorage.getItem("E10");
+        var E11 = localStorage.getItem("E11");
+        var E12 = localStorage.getItem("E12");
+        var E13 = localStorage.getItem("E13");
+        var E14 = localStorage.getItem("E14");
+        var E15 = localStorage.getItem("E15");
+        var E16 = localStorage.getItem("E16");
+        var E17 = localStorage.getItem("E17");
+        
+        var nombre =localStorage.getItem("nombre");
+        var numero =localStorage.getItem("numero");
+
+       var indi = document.getElementById("indicaciones");
+        
+       if (E1==""){}else{indi.insertAdjacentHTML('beforeend', E1 + '<br><br>');}
+       if (E2==""){}else{indi.insertAdjacentHTML('beforeend', E2+ '<br><br>');}
+       if (E3==""){}else{indi.insertAdjacentHTML('beforeend', E3+ '<br><br>');}
+       if (E4==""){}else{indi.insertAdjacentHTML('beforeend', E4+ '<br><br>');}
+       if (E5==""){}else{indi.insertAdjacentHTML('beforeend', E5+ '<br><br>');}
+       if (E6==""){}else{indi.insertAdjacentHTML('beforeend', E6+ '<br><br>');}
+       if (E7==""){}else{indi.insertAdjacentHTML('beforeend', E7+ '<br><br>');}
+       if (E8==""){}else{indi.insertAdjacentHTML('beforeend', E8+ '<br><br>');}
+       if (E9==""){}else{indi.insertAdjacentHTML('beforeend', E9+ '<br><br>');}
+       if (E10==""){}else{indi.insertAdjacentHTML('beforeend', E10+ '<br><br>');}
+       if (E11==""){}else{indi.insertAdjacentHTML('beforeend', E11+ '<br><br>');}
+       if (E12==""){}else{indi.insertAdjacentHTML('beforeend', E12+ '<br><br>');}
+       if (E13==""){}else{indi.insertAdjacentHTML('beforeend', E13+ '<br><br>');}
+       if (E14==""){}else{indi.insertAdjacentHTML('beforeend', E14+ '<br><br>');}
+       if (E15==""){}else{indi.insertAdjacentHTML('beforeend', E15+ '<br><br>');}
+       if (E16==""){}else{indi.insertAdjacentHTML('beforeend', E16+ '<br><br>');}
+       if (E17==""){}else{indi.insertAdjacentHTML('beforeend', E17+ '<br><br>');}
+
+        var hoy = new Date();
+        var dd = hoy.getDate();
+        var mm = hoy.getMonth()+1;
+        var yyyy = hoy.getFullYear();
+        
+        
+ 
+        var fecha = dd+'/'+mm+'/'+yyyy;
+
+        document.getElementById("fecha").innerHTML = fecha ;
+        document.getElementById("nombre").innerHTML = nombre+ '&nbsp; &nbsp;';
+        document.getElementById("numero").innerHTML = numero+ '&nbsp; &nbsp;';
+        window.print();
+
+
+    }
+    
+    window.onload = imprimir;
+    
+</script>
+
+</html>

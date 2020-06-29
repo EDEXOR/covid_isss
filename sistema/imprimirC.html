@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>HOJA DE INDICACIONES</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <img src="../img/isss.jpg" style="float: left; width: 10%; ">
+    <br>
+    <div style="text-align: center; position: relative;">
+      <H4>INSTITUTO SALVADOREÑO DEL SEGURO SOCIAL</H4><br>
+      <h6>HOSPITAL GENERAL</h6><br>
+      <br>
+      <h2>HOJA DE INDICACIONES</h2>
+    </div>
+    <BR><H3>CRITICO</H3>
+    <H4>Nombre:<span id="nombre"> </span>     N° de Afiliacion:<span id="numero"></span>     Fecha: <span id="fecha"></span></H4>
+
+    <!-- Jumbotron Header -->
+    <br><br>
+    <H4>Indicaciones:</H4><br>
+    
+      <h6 id="indicaciones"></h6>
+    
+   
+
+    </header>
+   
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+
+
+      
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<script type="text/javascript">
+  function imprimir(){
+
+        var C1 = localStorage.getItem("C1");
+        var C2 = localStorage.getItem("C2");
+        var C3 = localStorage.getItem("C3");
+        var C4 = localStorage.getItem("C4");
+        var C5 = localStorage.getItem("C5");
+        var C6 = localStorage.getItem("C6");
+        var C7 = localStorage.getItem("C7");
+        var C8 = localStorage.getItem("C8");
+        var C9 = localStorage.getItem("C9");
+        var C10 = localStorage.getItem("C10");
+        var C11 = localStorage.getItem("C11");
+        var C12 = localStorage.getItem("C12");
+        var C13 = localStorage.getItem("C13");
+        var C14 = localStorage.getItem("C14");
+        var C15 = localStorage.getItem("C15");
+        var C16 = localStorage.getItem("C16");
+        var C17 = localStorage.getItem("C17");
+        var C18 = localStorage.getItem("C18");
+        var C19 = localStorage.getItem("C19");
+        var C20 = localStorage.getItem("C20");
+        var C21 = localStorage.getItem("C21");
+        var C22 = localStorage.getItem("C22");
+        var C23 = localStorage.getItem("C23");
+
+        
+        var nombre =localStorage.getItem("nombre");
+        var numero =localStorage.getItem("numero");
+
+       var indi = document.getElementById("indicaciones");
+        
+       if (C1==""){}else{indi.insertAdjacentHTML('beforeend', C1+ '<br><br>');}
+       if (C2==""){}else{indi.insertAdjacentHTML('beforeend', C2+ '<br><br>');}
+       if (C3==""){}else{indi.insertAdjacentHTML('beforeend', C3+ '<br><br>');}
+       if (C4==""){}else{indi.insertAdjacentHTML('beforeend', C4+ '<br><br>');}
+       if (C5==""){}else{indi.insertAdjacentHTML('beforeend', C5+ '<br><br>');}
+       if (C6==""){}else{indi.insertAdjacentHTML('beforeend', C6+ '<br><br>');}
+       if (C7==""){}else{indi.insertAdjacentHTML('beforeend', C7+ '<br><br>');}
+       if (C8==""){}else{indi.insertAdjacentHTML('beforeend', C8+ '<br><br>');}
+       if (C9==""){}else{indi.insertAdjacentHTML('beforeend', C9+ '<br><br>');}
+       if (C10==""){}else{indi.insertAdjacentHTML('beforeend', C10+ '<br><br>');}
+       if (C11==""){}else{indi.insertAdjacentHTML('beforeend', C11+ '<br><br>');}
+       if (C12==""){}else{indi.insertAdjacentHTML('beforeend', C12+ '<br><br>');}
+       if (C13==""){}else{indi.insertAdjacentHTML('beforeend', C13+ '<br><br>');}
+       if (C14==""){}else{indi.insertAdjacentHTML('beforeend', C14+ '<br><br>');}
+       if (C15==""){}else{indi.insertAdjacentHTML('beforeend', C15+ '<br><br>');}
+       if (C16==""){}else{indi.insertAdjacentHTML('beforeend', C16+ '<br><br>');}
+       if (C17==""){}else{indi.insertAdjacentHTML('beforeend', C17+ '<br><br>');}
+       if (C18==""){}else{indi.insertAdjacentHTML('beforeend', C18+ '<br><br>');}
+       if (C19==""){}else{indi.insertAdjacentHTML('beforeend', C19+ '<br><br>');}
+       if (C20==""){}else{indi.insertAdjacentHTML('beforeend', C20+ '<br><br>');}
+       if (C21==""){}else{indi.insertAdjacentHTML('beforeend', C21+ '<br><br>');}
+       if (C22==""){}else{indi.insertAdjacentHTML('beforeend', C22+ '<br><br>');}
+       if (C23==""){}else{indi.insertAdjacentHTML('beforeend', C23+ '<br><br>');}
+
+        var hoy = new Date();
+        var dd = hoy.getDate();
+        var mm = hoy.getMonth()+1;
+        var yyyy = hoy.getFullYear();
+        
+        
+ 
+        var fecha = dd+'/'+mm+'/'+yyyy;
+
+        document.getElementById("fecha").innerHTML = fecha ;
+        document.getElementById("nombre").innerHTML = nombre+ '&nbsp; &nbsp;';
+        document.getElementById("numero").innerHTML = numero+ '&nbsp; &nbsp;';
+        window.print();
+
+        
+    }
+    
+    window.onload = imprimir;
+    
+</script>
+
+</html>
