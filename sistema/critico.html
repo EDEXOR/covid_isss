@@ -208,9 +208,10 @@
   <script type="text/javascript">
     
      function imprimir(){
-      var singos = document.getElementById("singos").value;
-        if (singos!=="") {localStorage.setItem("signos", singos);}
-
+     var singos = document.getElementById("singos").value;
+        if (singos!=="") {localStorage.setItem("signos", singos);}else{
+          localStorage.setItem("signos", "");
+        }
         var C1 = document.getElementById("1").checked;
         var C2 = document.getElementById("2").checked;
         var C3 = document.getElementById("3").checked;

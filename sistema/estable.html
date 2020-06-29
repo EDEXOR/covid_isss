@@ -178,7 +178,9 @@
      function imprimir(){
 
         var singos = document.getElementById("singos").value;
-        if (singos!=="") {localStorage.setItem("signos", singos);}
+        if (singos!=="") {localStorage.setItem("signos", singos);}else{
+          localStorage.setItem("signos", "");
+        }
 
         var E1 = document.getElementById("1").checked;
         var E2 = document.getElementById("2").checked;
