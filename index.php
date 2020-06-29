@@ -1,1 +1,1 @@
-<?php header("Location: inicio.html"); ?>
+<?php require_once("inicio.html") ?>
